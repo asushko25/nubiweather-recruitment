@@ -1,0 +1,234 @@
+.header {
+  margin-top: 32px;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__wrapper--left {
+  display: flex;
+  align-items: center;
+}
+.header__wrapper--right {
+  display: flex;
+  align-items: center;
+}
+.header__wrapper--icon {
+  width: 65px;
+  height: 65px;
+}
+.header__wrapper--color {
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.header__title {
+  margin-left: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+.header__city {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #3b3b3b;
+  border-radius: 10px;
+  padding: 8px 16px;
+}
+.header__city--select {
+  appearance: none;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  outline: none;
+  padding-right: 25px;
+  cursor: pointer;
+  z-index: 2;
+}
+.header__city--choose {
+  position: absolute;
+  right: 10px;
+  width: 13px;
+  height: 13px;
+  pointer-events: none;
+}
+.header option {
+  background-color: #3b3b3b;
+  color: #ffffff;
+}
+.header option:hover {
+  background-color: rgb(46.25, 46.25, 46.25);
+}
+.header option:checked {
+  background-color: rgb(84.5, 84.5, 84.5);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-synthesis: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.weatherapp {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.weather-card {
+  background-color: #3b3b3b;
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+  width: 220px;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+.weather-card__temperature {
+  font-size: 32px;
+  color: #4793ff;
+  margin-bottom: 15px;
+}
+.weather-card__status {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.weather-card__info {
+  font-size: 16px;
+  opacity: 0.8;
+}
+.weather-card__picture {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 75px;
+  height: 75px;
+  pointer-events: none;
+}
+
+.weather__details {
+  background-color: #3b3b3b;
+  border-radius: 15px;
+  padding: 20px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.weather__details--list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+}
+.weather__details--item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.weather__details--item img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+.weather__details--label {
+  color: #4793ff;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.weather__details--value {
+  margin-left: 25px;
+  color: white;
+  font-weight: 400;
+}
+.weather__details--image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 200px;
+  background-image: url("../images/cloud.png");
+}
+
+.main__today {
+  margin-top: 25px;
+  display: flex;
+}
+
+.main__week {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.days__card {
+  background-color: #3b3b3b;
+  border-radius: 12px;
+  padding: 15px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  width: 120px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+.days__card-day {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.days__card-date {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 8px;
+}
+.days__card-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 8px;
+}
+.days__card-temp {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.days__card-temp--day {
+  font-weight: 500;
+}
+.days__card-temp--night {
+  font-weight: 300;
+  color: #aaa;
+}
+.days__card-desc {
+  font-size: 13px;
+  color: #cfcfcf;
+}
+
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,72 @@
+@import "./variables";
+@import "./mixin";
+
+.weather-card {
+  background-color: #3b3b3b;
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+  width: 220px;
+  font-family: $main-font;
+  position: relative;
+
+  @include on-tablet {
+  }
+
+  @include on-mobile {
+    padding: 10px;
+  }
+
+  &__temperature {
+    font-size: 32px;
+    color: $temperature-color;
+    margin-bottom: 20px;
+
+    @include on-tablet {
+      font-size: 24px;
+    }
+
+    @include on-mobile {
+      font-size: 24px;
+
+      padding: 10px;
+    }
+  }
+
+  &__status {
+    font-size: 24px;
+    margin-bottom: 30px;
+
+    @include on-tablet {
+      font-size: 24px;
+    }
+
+    @include on-mobile {
+      padding: 12px;
+    }
+  }
+
+  &__info {
+    font-size: 16px;
+    opacity: 0.8;
+  }
+
+  &__picture {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 75px;
+    height: 75px;
+    pointer-events: none;
+
+    @include on-tablet {
+      width: 60px;
+      height: 60px;
+    }
+
+    @include on-mobile {
+      width: 45px;
+      height: 45px;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+@import "./variables";
+@import "./mixin";
+
+.header {
+  margin-top: 32px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include on-tablet {
+      flex-direction: column;
+    }
+
+    @include on-mobile {
+      flex-direction: column;
+    }
+
+    &--left {
+      display: flex;
+      align-items: center;
+    }
+
+    &--right {
+      display: flex;
+      align-items: center;
+    }
+
+    &--icon {
+      width: 65px;
+      height: 65px;
+    }
+
+    &--color {
+      display: block;
+      width: 35px;
+      height: 35px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+  }
+
+  &__title {
+    margin-left: 20px;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+
+    @include on-tablet {
+      margin-left: 10px;
+    }
+
+    @include on-mobile {
+    }
+  }
+
+  &__city {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: $main-color;
+    border-radius: 10px;
+    padding: 8px 16px;
+
+    &--select {
+      appearance: none;
+      background: transparent;
+      border: none;
+      color: $second-color;
+      font-family: $main-font;
+      font-size: 16px;
+      font-weight: 500;
+      outline: none;
+      padding-right: 25px;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    &--choose {
+      position: absolute;
+      right: 10px;
+      width: 13px;
+      height: 13px;
+      pointer-events: none;
+    }
+  }
+
+  option {
+    background-color: $main-color;
+    color: $second-color;
+
+    &:hover {
+      background-color: darken($main-color, 5%);
+    }
+
+    &:checked {
+      background-color: lighten($main-color, 10%);
+    }
+  }
+}

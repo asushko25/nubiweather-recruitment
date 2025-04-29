@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-synthesis: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.weatherapp {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

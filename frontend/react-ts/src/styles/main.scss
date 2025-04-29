@@ -1,0 +1,17 @@
+@import "./variables";
+@import "./mixin";
+
+.main {
+  &__today {
+    margin-top: 25px;
+    display: flex;
+  }
+}
+
+.main__week {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
